@@ -1,0 +1,24 @@
+<html ng-app="testapp"> 
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="js/modules/vaRecorder/css/virecorder.css">
+</head>
+<body ng-controller="testcontroller">	
+		
+		<!-- here is how you use it -->
+		<ngcamcecorder configuration="camconfiguration"></ngcamcecorder>
+		
+
+		<button ng-click = "camconfiguration.init()" >Recroding init</button>
+		<img ng-src="{{camconfiguration.output.recordingthumb}}" />
+
+		
+		<script type="text/javascript" src="angularjs.min.js"></script>
+		<script type="text/javascript" src="js/modules/vaRecorder/ngCamRecorder.js"></script>
+		<script type="text/javascript" src="js/App.js"></script>
+
+		<script type="text/javascript" src="js/modules/vaRecorder/recorder.js"></script>
+		<script type="text/javascript" src="js/modules/vaRecorder/whammy.js"></script>
+		<script type="text/javascript" src="js/modules/vaRecorder/VIRecorder.js"></script>
+</body>
+</html>
